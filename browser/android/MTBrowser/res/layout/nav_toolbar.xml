@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+   		android:layout_height="40dip"
+    	android:orientation="vertical"
+    	android:background="@drawable/toolbar_background" 
+    	android:gravity="top"
+    	android:layout_alignParentBottom="true" >
+    	<View xmlns:android="http://schemas.android.com/apk/res/android"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="2dip"
+    	    android:background="@color/gorilla_orange"
+    	    />
+    	
+    	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:layout_width="fill_parent"
+   			android:layout_height="fill_parent"
+    	    android:layout_marginLeft="25dip"
+    	    android:layout_marginRight="25dip"
+    	    android:gravity="center_vertical"
+    	    >
+    	    <com.gorillalogic.monkeytalk.mtbrowser.MTNavButtons
+        		android:id="@+id/nav_buttons"
+        		android:layout_width="wrap_content"
+   				android:layout_height="wrap_content"
+   				android:layout_marginTop="2dip"
+        	/>
+    	    
+    	    <!-- <Button xmlns:android="http://schemas.android.com/apk/res/android"
+    	        android:id="@+id/url_button"
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:textSize="18dip"
+    	    	android:textColor="@drawable/mt_url_button"
+    	    	android:text="@string/url_button_text"
+    	    	android:background="@android:color/transparent"
+    	    	android:layout_alignParentRight="true"
+    	    /> -->
+    	</RelativeLayout>
+        
+    </LinearLayout>

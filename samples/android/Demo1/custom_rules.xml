@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom_rules">
+	<target name="-post-compile">
+		<fail unless="aspectj.dir" message="aspectj.dir is missing. This must point to the AspectJ folder." />
+
+		<property name="classes.woven.dir" value="${out.classes.absolute.dir}/../classes-woven" />
+
+		<!-- make sure aspectj runtime is in libs folder, so it gets included in the APK -->
+		<copy todir="${basedir}/libs">
+			<fileset file="${aspectj.dir}/lib/aspectjrt.jar" />
+		</copy>
+
+		<!-- setup aspectj ant tasks -->
+		<taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties">
+			<classpath>
+				<pathelement location="${aspectj.dir}/lib/aspectjtools.jar" />
+			</classpath>
+		</taskdef>
+
+		<condition property="android.jar" value="${project.target.android.jar}">
+			<isset property="project.target.android.jar" />
+		</condition>
+		<fail unless="android.jar" message="android.jar is missing. This must point to the target SDK's android.jar." />
+
+		<!-- weave MonkeyTalk into the app -->
+		<iajc destDir="${classes.woven.dir}" showWeaveInfo="true">
+			<aspectpath>
+				<pathelement location="${basedir}/libs/monkeytalk-agent-1.0.11.beta5c.jar" />
+			</aspectpath>
+			<inpath>
+				<pathelement location="${out.classes.absolute.dir}" />
+			</inpath>
+			<classpath>
+				<pathelement location="${out.classes.absolute.dir}" />
+				<pathelement location="${android.jar}" />
+				<fileset dir="${basedir}/libs">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</iajc>
+
+		<!-- remove the old classes dir, and replace with new "woven" classes -->
+		<delete dir="${out.classes.absolute.dir}" />
+		<mkdir dir="${out.classes.absolute.dir}" />
+		<copy todir="${out.classes.absolute.dir}">
+			<fileset dir="${classes.woven.dir}" />
+		</copy>
+	</target>
+
+	<target name="-post-build">
+		<!-- cleanup aspectj runtime from libs folder -->
+		<delete file="${basedir}/libs/aspectjrt.jar" />
+	</target>
+</project>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+   		android:layout_height="64dip"
+    	android:orientation="vertical"
+    	android:background="@drawable/toolbar_background"    	>
+    
+    <!-- Dummy view to prevent EditText from receiving focus -->
+	<View
+   		 android:focusable="true" android:focusableInTouchMode="true"
+   		 android:layout_width="0px" android:layout_height="0px" />	
+    
+    	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    	    android:id="@+id/title"
+    	    android:layout_width="fill_parent"
+   			android:layout_height="16dip"
+   			android:textSize="11dip"
+   			android:gravity="center"
+   			android:text="@string/loading_string"
+   			android:layout_marginRight="5dip"
+   			android:layout_marginLeft="5dip"
+    	    />
+    	
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	    android:layout_width="fill_parent"
+   			android:layout_height="46dip"
+   			android:layout_marginRight="5dip"
+   			android:layout_marginLeft="5dip"
+   			android:orientation="horizontal"
+    	    >
+    	    
+    	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	        android:id="@+id/loading_container"
+    	        android:layout_width="35dip"
+    		    android:layout_height="46dip"
+    		    android:gravity="center"
+    		    android:visibility="gone"
+    		    android:orientation="horizontal" >
+    		    <ProgressBar
+    		    android:id="@+id/progress"
+    		    style="?android:attr/progressBarStyleLarge"
+    		    android:layout_width="25dip"
+    		    android:layout_height="25dip"
+    		     />
+    		    <View xmlns:android="http://schemas.android.com/apk/res/android"
+    	        android:layout_width="5dip"
+    	        android:layout_height="fill_parent"
+    	        />
+    	        </LinearLayout>
+    	        
+    	    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	        android:layout_width="fill_parent"
+   				android:layout_height="fill_parent"
+   				android:orientation="horizontal" >
+    	        <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    	    android:id="@+id/url_field"
+    	    android:layout_width="fill_parent"
+   			android:layout_height="fill_parent"
+   			android:inputType="textUri"
+   			android:hint="@string/url_hint"
+   			android:textSize="17dip"
+   			android:gravity="center_vertical"
+   			android:paddingRight="38dip"
+    	    />
+    	      <Button xmlns:android="http://schemas.android.com/apk/res/android"
+    	        android:id="@+id/reload"
+    	        android:layout_width="25dip"
+    		    android:layout_height="25dip"
+    		    android:layout_alignParentRight="true"
+    		    android:layout_centerVertical="true"
+    		    android:layout_marginRight="10dip"
+    	        android:background="@drawable/mt_reload_button"
+    	        />
+    	    </RelativeLayout>
+    	    
+    	</LinearLayout>
+    	
+    	<View xmlns:android="http://schemas.android.com/apk/res/android"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="2dip"
+    	    android:background="@color/gorilla_orange"
+    	    />
+        
+    </LinearLayout>

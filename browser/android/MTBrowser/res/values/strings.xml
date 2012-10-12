@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app">MTBrowser</string>
+    <string name="default_url">http://gorillalogic.com</string>
+    <string name="loading_string">Loading</string>
+    <string name="url_hint">Go to this address</string>
+    <string name="url_button_text">url</string>
+    
+    <string name="mtid_url_field">URL</string>
+    <string name="mtid_title">Title</string>
+    <string name="mtid_back">Back</string>
+    <string name="mtid_forward">Forward</string>
+    <string name="mtid_url_button">Show URL</string>
+    <string name="mtid_refresh">Refresh</string>
+    <string name="mtid_cancel">Cancel</string>
+    
+    <color name="toolbar_background">#000000</color>
+    <color name="cancel_background">#50000000</color>
+    <color name="gorilla_orange">#F63</color>
+
+</resources>

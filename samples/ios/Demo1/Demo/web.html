@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<HEAD>
+    </br> 
+    </br>
+    </br>
+    
+<SCRIPT LANGUAGE="JavaScript">
+function changeText(){
+    
+  var userInput = document.getElementById('userInput').value;
+  var txtarea = document.getElementById('txtarea').value;
+  var selection = document.test.rbox;
+  var ddm = document.getElementById("Fruits");
+  var dd = ddm.options[ddm.selectedIndex].value;
+  
+  if(document.getElementById("d").checked == true)
+    var d = ", D"
+  else
+    var d=""
+  if(document.getElementById("e").checked == true)
+    var e = ", E"
+  else
+    var e=""
+  if(document.getElementById("f").checked == true)
+    var f = ", F"
+  else
+    var f=""
+
+  for (i=0; i<selection.length; i++)
+    if (selection[i].checked == true)
+    {
+      var rbox = selection[i].value;
+    }
+        
+  document.getElementById('output').innerHTML = userInput + ', ' + txtarea + ', ' + dd + ', ' + rbox + d + e + f;
+}
+</SCRIPT>
+</HEAD>
+
+<body>
+
+<form name="test">
+<input type='text' id='userInput' value="Hello!" /><br />
+ 
+<Textarea rows="3" cols="20" id="txtarea">Enter your text here.</Textarea><br />
+
+<select id="Fruits" name="Fruits">
+<option value="Apple">Apple</option>
+<option value="Banana">Banana</option>
+<option value="Orange">Orange</option>
+<option value="Grape">Grape</option>
+</select><br />
+
+<input type="radio" name="rbox" id="a" value="A" checked/><label for="a">A</label>
+<input type="radio" name="rbox" id="b" value="B" /><label for="b">B</label>
+<input type="radio" name="rbox" id="c" value="C" /><label for="c">C</label>
+<br />  
+<input type="checkbox" name="cbox" id="d" value="D" /><label for="d">D</label>
+<input type="checkbox" name="cbox" id="e" value="E" /><label for="e">E</label>
+<input type="checkbox" name="cbox" id="f" value="F" /><label for="f">F</label>
+<br />
+
+<input type="button" name=GO value="GO!" onClick="changeText(this.form)"/>
+</form>
+
+<p>Output: <a id='output'></a> </p> 
+
+    </br>
+
+</body>
+</html>

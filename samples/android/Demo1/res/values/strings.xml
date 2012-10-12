@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app">MonkeyTalkDemo1</string>
+    <string name="tabImageDesc">myTabIcon</string>
+    <string name="loginTitle">Login</string>
+    <string name="loginUsernameHint">username</string>
+    <string name="loginPasswordHint">password</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="loginFailedUsernameTooShort">Sorry! Username must be 4 or more characters.</string>
+    <string name="loginFailedPasswordTooShort">Sorry! Password must be 4 or more characters.</string>
+    <string name="loginSuccess">Logging in…</string>
+    <string name="logoutTitle">Logout</string>
+    <string name="logoutWelcome">Welcome, %s!</string>
+    <string name="logoutBtn">LOGOUT</string>
+    <string name="formsTitle">Forms</string>
+    <string name="formsCheckBoxOn">ON</string>
+    <string name="formsCheckBoxOff">OFF</string>
+    <string name="formsRadioA">A</string>
+    <string name="formsRadioB">B</string>
+    <string name="formsRadioC">C</string>
+    <string name="formsSpinnerPrompt">Choose Element</string>
+    <string name="formsSpinnerDesc">myDropdown</string>
+    <string name="formsCheckboxDesc">mySwitch</string>
+    <string name="formsRadiosDesc">myRadios</string>
+    <string name="formsSliderDesc">mySlider</string>
+    <string name="formsValueDesc">myValue</string>
+    <string name="elementListDesc">elements</string>
+    <string name="elementNumberDesc">myNumber</string>
+    <string name="elementSymbolDesc">mySymbol</string>
+    <string name="elementNameDesc">myName</string>
+
+    <string-array name="formsSpinnerData">
+        <item>Hydrogen</item>
+        <item>Helium</item>
+        <item>Lithium</item>
+        <item>Boron</item>
+        <item>Carbon</item>
+        <item>Nitrogen</item>
+        <item>Oxygen</item>
+        <item>Fluorine</item>
+        <item>Neon</item>
+    </string-array>
+
+    <string name="hierarchyTitle">Hierarchy</string>
+    <string name="hierarchyEmpty">Empty…</string>
+
+    <string-array name="theElements">
+        <item>Hydrogen</item>
+        <item>Helium</item>
+        <item>Lithium</item>
+        <item>Beryllium</item>
+        <item>Boron</item>
+        <item>Carbon</item>
+        <item>Nitrogen</item>
+        <item>Oxygen</item>
+        <item>Fluorine</item>
+        <item>Neon</item>
+        <item>Sodium</item>
+        <item>Magnesium</item>
+        <item>Aluminum</item>
+        <item>Silicon</item>
+        <item>Phosphorus</item>
+        <item>Sulfur</item>
+        <item>Chlorine</item>
+        <item>Argon</item>
+        <item>Potassium</item>
+        <item>Calcium</item>
+        <item>Scandium</item>
+        <item>Titanium</item>
+        <item>Vanadium</item>
+        <item>Chromium</item>
+        <item>Manganese</item>
+        <item>Iron</item>
+        <item>Cobalt</item>
+        <item>Nickel</item>
+        <item>Copper</item>
+        <item>Zinc</item>
+        <item>Gallium</item>
+        <item>Germanium</item>
+        <item>Arsenic</item>
+        <item>Selenium</item>
+        <item>Bromine</item>
+        <item>Krypton</item>
+        <item>Rubidium</item>
+        <item>Strontium</item>
+        <item>Yttrium</item>
+        <item>Zirconium</item>
+        <item>Niobium</item>
+        <item>Molybdenum</item>
+        <item>Technetium</item>
+        <item>Ruthenium</item>
+        <item>Rhodium</item>
+        <item>Palladium</item>
+        <item>Silver</item>
+        <item>Cadmium</item>
+        <item>Indium</item>
+        <item>Tin</item>
+        <item>Antimony</item>
+        <item>Tellurium</item>
+        <item>Iodine</item>
+        <item>Xenon</item>
+        <item>Cesium</item>
+        <item>Barium</item>
+        <item>Lanthanum</item>
+        <item>Cerium</item>
+        <item>Praseodymium</item>
+        <item>Neodymium</item>
+        <item>Promethium</item>
+        <item>Samarium</item>
+        <item>Europium</item>
+        <item>Gadolinium</item>
+        <item>Terbium</item>
+        <item>Dysprosium</item>
+        <item>Holmium</item>
+        <item>Erbium</item>
+        <item>Thulium</item>
+        <item>Ytterbium</item>
+        <item>Lutetium</item>
+        <item>Hafnium</item>
+        <item>Tantalum</item>
+        <item>Tungsten</item>
+        <item>Rhenium</item>
+        <item>Osmium</item>
+        <item>Iridium</item>
+        <item>Platinum</item>
+        <item>Gold</item>
+        <item>Mercury</item>
+        <item>Thallium</item>
+        <item>Lead</item>
+        <item>Bismuth</item>
+        <item>Polonium</item>
+        <item>Astatine</item>
+        <item>Radon</item>
+        <item>Francium</item>
+        <item>Radium</item>
+    </string-array>
+    <string-array name="theElementSymbols">
+        <item>H</item>
+        <item>He</item>
+        <item>Li</item>
+        <item>Be</item>
+        <item>B</item>
+        <item>C</item>
+        <item>N</item>
+        <item>O</item>
+        <item>F</item>
+        <item>Ne</item>
+        <item>Na</item>
+        <item>Mg</item>
+        <item>Al</item>
+        <item>Si</item>
+        <item>P</item>
+        <item>S</item>
+        <item>Cl</item>
+        <item>Ar</item>
+        <item>K</item>
+        <item>Ca</item>
+        <item>Sc</item>
+        <item>Ti</item>
+        <item>V</item>
+        <item>Cr</item>
+        <item>Mn</item>
+        <item>Fe</item>
+        <item>Co</item>
+        <item>Ni</item>
+        <item>Cu</item>
+        <item>Zn</item>
+        <item>Ga</item>
+        <item>Ge</item>
+        <item>As</item>
+        <item>Se</item>
+        <item>Br</item>
+        <item>Kr</item>
+        <item>Rb</item>
+        <item>Sr</item>
+        <item>Y</item>
+        <item>Zr</item>
+        <item>Nb</item>
+        <item>Mo</item>
+        <item>Tc</item>
+        <item>Ru</item>
+        <item>Rh</item>
+        <item>Pd</item>
+        <item>Ag</item>
+        <item>Cd</item>
+        <item>In</item>
+        <item>Sn</item>
+        <item>Sb</item>
+        <item>Te</item>
+        <item>I</item>
+        <item>Xe</item>
+        <item>Cs</item>
+        <item>Ba</item>
+        <item>La</item>
+        <item>Ce</item>
+        <item>Pr</item>
+        <item>Nd</item>
+        <item>Pm</item>
+        <item>Sm</item>
+        <item>Eu</item>
+        <item>Gd</item>
+        <item>Tb</item>
+        <item>Dy</item>
+        <item>Ho</item>
+        <item>Er</item>
+        <item>Tm</item>
+        <item>Yb</item>
+        <item>Lu</item>
+        <item>Hf</item>
+        <item>Ta</item>
+        <item>W</item>
+        <item>Re</item>
+        <item>Os</item>
+        <item>Ir</item>
+        <item>Pt</item>
+        <item>Au</item>
+        <item>Hg</item>
+        <item>Tl</item>
+        <item>Pb</item>
+        <item>Bi</item>
+        <item>Po</item>
+        <item>At</item>
+        <item>Rn</item>
+        <item>Fr</item>
+        <item>Ra</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+    	        android:id="@+id/back"
+    	    	android:layout_width="20dip"
+    	    	android:layout_height="20dip"
+    	    	android:background="@drawable/mt_back_button"
+    	    	android:state_enabled="false"
+    	    />
+   <Button xmlns:android="http://schemas.android.com/apk/res/android"
+    	        android:id="@+id/forward"
+    	    	android:layout_width="20dip"
+    	    	android:layout_height="20dip"
+    	    	android:background="@drawable/mt_forward_button"
+    	    	android:layout_marginLeft="25dip"
+    	    	android:state_enabled="false"
+    	    />
+</LinearLayout>
